@@ -51,7 +51,7 @@
     "styles:min": "postcss --use cssnano --output dist/bundle.min.css dist/bundle.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:admin": "nodemon --watch admin .",
-    "watch:all": "parallelshell 'npm run watch:js' 'npm run watch:static' 'npm run watch:styles'",
+    "watch:all": "parallelshell 'npm run watch:js' 'npm run watch:static' 'npm run watch:styles' 'npm run watch:admin'",
     "watch:js": "watchify scripts/entry.js --debug --verbose --transform [ babelify --presets [ es2015 ] ] --outfile dist/bundle.js",
     "watch:static": "nodemon --watch static --ext * --exec 'npm run static'",
     "watch:styles": "nodemon --watch styles --ext css --exec 'npm run styles:compile'"
