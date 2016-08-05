@@ -9,7 +9,7 @@ describe('Article', function () {
     expect(article).to.exist
   })
 
-  it('should be able to be saved', function () {})
+  it('should be able to be saved')
   it('should have a title')
   it('should have a slug')
   it('should be able to be versioned')
